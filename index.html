@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Botomergan</title>
+    </head>
+    <body>
+        <a href="#" id = "Button">Send!</a>
+    </body>
+    <script type="text/javascript">
+        var button = document.getElementById("Button")
+        button.addEventListener("click", function () {
+            if (Navigator.share) {
+                Navigator.share({
+                    title: 'Hola!',
+                    text: 'Prueba 1',
+                    url: 'sound.mp3'
+
+                })
+            }
+        })
+    </script>
+</html>
